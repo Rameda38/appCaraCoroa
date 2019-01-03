@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cor"
+    android:theme="@style/Theme.AppCompat.NoActionBar"
+    tools:context=".ResultadoActivity"
+    tools:layout_editor_absoluteY="25dp">
+
+    <Button
+        android:id="@+id/btt_voltar"
+        style="@style/Theme.AppCompat.NoActionBar"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="69dp"
+        android:background="@drawable/botao_voltar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/iv_moeda"
+        app:layout_constraintTop_toBottomOf="@+id/iv_moeda" />
+
+    <ImageView
+        android:id="@+id/iv_moeda"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+
+        android:layout_marginTop="117dp"
+        android:layout_marginBottom="13dp"
+        android:contentDescription="@string/todo"
+        app:layout_constraintBottom_toTopOf="@+id/btt_voltar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/moeda_coroa" />
+
+</android.support.constraint.ConstraintLayout>
